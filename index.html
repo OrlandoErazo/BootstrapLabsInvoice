@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" h-100>
 
 <head>
   <title>Invoice From Idea Foundry</title>
@@ -14,14 +14,14 @@
 </head>
 
 <body>
-  <div class="container rounder p-2 border-1">
+  <div class="container rounder p-3 border-1">
     <div class="d-flex justify-content-end mt-3 d-print-none">
       <button type="button" class="btn btn-dark" onclick="window.print()">Print this page</button>
     </div>
     <div class="row align-items-center">
       <div class="col sm-7 d-flex justify-content-start">
         <img src="/img/IdeaFoundryLogo.png" title="Idea Foundry Logo" alt="Idea Foundry Logo">
-      </div>
+      </div>      
       <div class="col sm-5 d-flex justify-content-sm-end justify-content-start">
         <strong>Customer:</strong>&nbsp;4908
       </div>
@@ -37,7 +37,7 @@
     </div>
     <hr>
     <div class="row row-cols-md-2">
-      <div class="col-6 d-flex justify-contnent-start">
+      <div class="col-6 d-flex justify-content-start">
         <div>
           <strong>Invoice To:</strong><br>
           <address class="address">
@@ -53,7 +53,7 @@
           <address class="address">
             Idea Foundry, Inc.<br>
             2705 N. Enterprise St.<br>
-            Kenersville, NC 27284
+            Kenersville, NC 27284            
           </address>
         </div>
       </div>
@@ -93,16 +93,22 @@
           </tr>
         </tbody>
         <tfoot>
-          <tr>
-            <td colspan="4">Sub Total:</td>
+          <tr class="text-sm-right">
+            <td colspan="4">
+              Sub Total:
+            </td>
             <td class="text-end">$2,550.00</td>
           </tr>
-          <tr>
-            <td colspan="4">Tax:</td>
+          <tr class="text-sm-right">
+            <td colspan="4">
+              Tax:
+            </td>
             <td class="text-end">$0.00</td>
           </tr>
-          <tr>
-            <td colspan="4">Total:</td>
+          <tr class="text-sm-right">
+            <td colspan="4">
+              Total:
+            </td>
             <td class="text-end">$2,550.00</td>
           </tr>
         </tfoot>
@@ -110,8 +116,8 @@
     </div>
     <footer>
       <div class="row">
-        <div class="col-12">
-          <strong>NOTE:</strong>&nbsp;This a computer generated receipt and does not require a signature.
+        <div class="col-sm-12">
+          <strong>NOTE:</strong>&nbsp;This is a computer generated receipt and does not require a signature.
         </div>
       </div>
     </footer>
